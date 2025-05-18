@@ -1,5 +1,5 @@
 # Ignore Tailwind CSS output
-src/output.css
+# src/output.css
 
 # Node.js
 node_modules/
