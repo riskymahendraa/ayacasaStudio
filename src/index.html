@@ -26,17 +26,66 @@
   <body class="bg-black">
     <div class="container mx-auto">
       <div class="flex items-center p-4 justify-between my-3">
-        <div class="text-3xl tracking-wide text-white font-[Poppins]">
+        <div
+          class="md:text-3xl text-xl tracking-wide text-white font-[Poppins]"
+        >
           Ayacasa Studio
         </div>
+        <!-- navbar for desktop -->
         <div
-          class="text-base flex gap-4 text-white font-[Roboto] space-x-3 tracking-widest"
+          class="text-base hidden md:flex gap-4 text-white font-[Roboto] space-x-3 tracking-widest"
         >
           <a href="">About</a>
           <a href="">Teams</a>
           <a href="">Gallery</a>
           <a href="">Contact</a>
         </div>
+        <!-- end of navbar for desktop -->
+
+        <!-- navbar for mobile -->
+        <nav
+          id="mobile-navbar"
+          class="fixed bottom-0 left-1/2 max-w-xs w-[80%] bg-slate-800 text-slate-200 shadow-md md:hidden z-50 transition-all duration-300 ease-in-out translate-y-full rounded-4xl opacity-0 pointer-events-none -translate-x-1/2"
+        >
+          <ul class="flex justify-center items-center py-2 gap-5">
+            <li>
+              <a href="#" class="text-center"
+                ><i
+                  class="fa-solid fa-house border-2 border-orange-400 p-2 rounded-full"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i
+                  class="fa-solid fa-building-user border-2 border-orange-400 p-2 rounded-full"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i
+                  class="fa-solid fa-users border-2 border-orange-400 p-2 rounded-full"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i
+                  class="fa-solid fa-images border-2 border-orange-400 p-2 rounded-full"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-center"
+                ><i
+                  class="fa-solid fa-address-card border-2 border-orange-400 p-2 rounded-full"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end of navbar for mobile -->
       </div>
     </div>
     <div>
@@ -184,11 +233,11 @@
             odio ab non!
           </div>
         </div>
-        <div class="gallery">
+        <div class="gallery max-w-sm mx-auto">
           <div class="flex flex-col mb-10">
             <div class="grid md:grid-cols-12 gap-8 lg:mb-11 mb-7">
               <div
-                class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl"
+                class="md:col-span-4 md:h-[404px] h-[277px] md:w-full w-[350px] rounded-3xl"
               >
                 <img
                   src="/src/img/desain1.jpg"
@@ -197,7 +246,7 @@
                 />
               </div>
               <div
-                class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl"
+                class="md:col-span-8 md:h-[404px] h-[277px] md:w-full w-[350px] rounded-3xl"
               >
                 <img
                   src="/src/img/desain2.jpg"
@@ -207,21 +256,21 @@
               </div>
             </div>
             <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
-              <div class="h-[277px] w-full rounded-3xl">
+              <div class="h-[277px] md:w-full w-[350px] rounded-3xl">
                 <img
                   src="/src/img/desain3.jpg"
                   alt="Gallery image"
                   class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
                 />
               </div>
-              <div class="h-[277px] w-full rounded-3xl">
+              <div class="h-[277px] md:w-full w-[350px] rounded-3xl">
                 <img
                   src="/src/img/desain4.jpg"
                   alt="Gallery image"
                   class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
                 />
               </div>
-              <div class="h-[277px] w-full rounded-3xl">
+              <div class="h-[277px] md:w-full w-[350px] rounded-3xl">
                 <img
                   src="/src/img/desain5.jpg"
                   alt="Gallery image"
@@ -259,7 +308,7 @@
               dolorem ducimus?
             </div>
             <div
-              class="flex mx-auto gap-3 justify-center md:justify-start items-center my-3"
+              class="w-full flex mx-auto gap-3 justify-center md:justify-start items-center my-3"
             >
               <div
                 class="text-white rounded-full border-2 px-2 py-1 border-slate-500 hover:border-orange-400 transition-all duration-500 ease-in-out"
@@ -301,10 +350,10 @@
           </div>
         </div>
         <div
-          class="text-white max-w-sm text-4xl mx-auto p-5 text-center col-span-1 md:col-span-2 md:max-w-7xl md:border-l-2 border-slate-500"
+          class="text-white ml-[9%] max-w-sm text-4xl mx-auto w-full md:p-5 text-center col-span-1 md:col-span-2 md:max-w-7xl md:border-l-2 border-slate-500"
         >
           <iframe
-            class="ml-3 md:mx-auto sm:w-[540px] xl:w-[880px] rounded-xl"
+            class="block mx-auto w-[300px] sm:w-[540px] xl:w-[880px] rounded-xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.623509604122!2d115.13897887576007!3d-8.535882186502809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23a553578d695%3A0x31a3f463fd8fff3c!2sJl.%20Tukad%20Sang%20Sang%2C%20Banjar%20Anyar%2C%20Kec.%20Kediri%2C%20Kabupaten%20Tabanan%2C%20Bali%2082121!5e0!3m2!1sen!2sid!4v1747313627548!5m2!1sen!2sid"
             width="300"
             height="300"
@@ -316,9 +365,10 @@
         </div>
       </div>
     </section>
-    <section class="">
+    <section>
       <div
-        class="bg-slate-800 md:p-5 justify-between items-center mx-auto grid grid-cols-2"
+        id="footer"
+        class="bg-slate-800 md:p-5 h-full justify-between items-center mx-auto grid grid-cols-2"
       >
         <div
           class="text-lg md:text-3xl md:ml-44 mx-auto text-white font-[Poppins]"

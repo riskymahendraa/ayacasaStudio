@@ -1,25 +1,29 @@
-const gallery = document.querySelector(".gallery");
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightbox-image");
-const closeButton = document.getElementById("close");
+const navbar = document.getElementById("mobile-navbar");
+const footer = document.getElementById("footer");
 
-// Add event listener to each image
-gallery.addEventListener("click", (e) => {
-  if (e.target.classList.contains("gallery-image")) {
-    const imageSrc = e.target.src;
-    lightboxImage.src = imageSrc;
-    lightbox.style.display = "flex";
-  }
-});
+window.addEventListener("scroll", () => {
+  const scrollY = window.pageYOffset;
+  const windowHeight = window.innerHeight;
+  const navbarHeight = navbar.offsetHeight;
+  const footerTop = footer.offsetTop;
+  const bottomOfViewport = scrollY + windowHeight;
 
-// Close lightbox when close button is clicked
-closeButton.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+  const shouldShow =
+    scrollY > 100 && bottomOfViewport < footerTop - navbarHeight;
 
-// Close lightbox when clicking outside the image
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
+  if (shouldShow) {
+    navbar.classList.remove(
+      "translate-y-full",
+      "opacity-0",
+      "pointer-events-none"
+    );
+    navbar.classList.add("translate-y-0", "opacity-100");
+  } else {
+    navbar.classList.remove("translate-y-0", "opacity-100");
+    navbar.classList.add(
+      "translate-y-full",
+      "opacity-0",
+      "pointer-events-none"
+    );
   }
 });
