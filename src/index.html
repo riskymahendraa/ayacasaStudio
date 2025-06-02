@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,10 +35,10 @@
         <div
           class="text-base hidden md:flex gap-4 text-white font-[Roboto] space-x-3 tracking-widest"
         >
-          <a href="">About</a>
-          <a href="">Teams</a>
-          <a href="">Gallery</a>
-          <a href="">Contact</a>
+          <a href="#about">About</a>
+          <a href="#teams">Teams</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </div>
         <!-- end of navbar for desktop -->
 
@@ -56,28 +56,28 @@
               ></a>
             </li>
             <li>
-              <a href="#" class="text-center"
+              <a href="#about" class="text-center"
                 ><i
                   class="fa-solid fa-building-user border-2 border-orange-400 p-2 rounded-full"
                 ></i>
               </a>
             </li>
             <li>
-              <a href="#" class="text-center"
+              <a href="#teams" class="text-center"
                 ><i
                   class="fa-solid fa-users border-2 border-orange-400 p-2 rounded-full"
                 ></i
               ></a>
             </li>
             <li>
-              <a href="#" class="text-center"
+              <a href="#gallery" class="text-center"
                 ><i
                   class="fa-solid fa-images border-2 border-orange-400 p-2 rounded-full"
                 ></i
               ></a>
             </li>
             <li>
-              <a href="#" class="text-center"
+              <a href="#contact" class="text-center"
                 ><i
                   class="fa-solid fa-address-card border-2 border-orange-400 p-2 rounded-full"
                 ></i>
@@ -91,131 +91,138 @@
     <div>
       <img class="w-full h-screen object-cover" src="img/hero.jpg" alt="" />
     </div>
-    <div
-      class="mx-auto max-w-sm md:max-w-7xl px-4 my-5 sm:px-6 lg:px-8 grid md:grid-cols-2"
-    >
+    <section id="about">
       <div
-        class="text-white font-[poppins] font-light text-3xl md:text-5xl my-5"
+        class="mx-auto max-w-sm md:max-w-7xl px-4 my-5 sm:px-6 lg:px-8 grid md:grid-cols-2"
       >
-        <p>Innovative Architecture <br />with a Personal Touch</p>
-      </div>
-      <div class="text-white font-[roboto] font-medium my-5">
-        <p class="text-justify text-sm/relaxed md:text-base/relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-          accusamus non praesentium animi quasi corporis ea officia sequi at
-          sit, ipsa totam ullam iste mollitia amet omnis earum ipsum
-          exercitationem! Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. In suscipit hic officia illo. Hic atque nobis ducimus dolore
-          facere minima. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Unde, blanditiis?
-        </p>
-        <br />
-        <p class="text-justify text-sm/relaxed text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-          obcaecati reiciendis nostrum, amet dicta impedit aut provident sunt
-          magnam, velit ipsum aliquid alias! Aliquam placeat, itaque recusandae
-          voluptatibus aliquid quam? Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Cumque, provident.
-        </p>
-        <br />
-        <p class="text-justify text-sm/relaxed text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-          obcaecati reiciendis nostrum, amet dicta impedit aut provident sunt
-          magnam, velit ipsum aliquid alias! Aliquam placeat, itaque recusandae
-          voluptatibus aliquid quam? Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Cumque, provident.
-        </p>
-      </div>
-    </div>
-    <!-- Teams Section -->
-    <div
-      class="border-t-2 max-w-sm mx-auto md:mx-auto border-slate-700 md:container my-5"
-    >
-      <div class="mx-auto max-w-7xl px-4 my-5 sm:px-6 lg:px-8">
-        <h1
-          class="text-white font-[poppins] font-light text-xl md:text-4xl my-7 text-center"
+        <div
+          class="text-white font-[poppins] font-light text-3xl md:text-5xl my-5"
         >
-          Our Teams
-        </h1>
-        <div class="grid my-5 md:grid-cols-3 gap-10 justify-center text-center">
-          <div class="text-white">
-            <div>
-              <img
-                class="w-full h-[500px] object-top object-cover rounded-2xl"
-                src="img/man.jpg"
-                alt=""
-              />
+          <p>Innovative Architecture <br />with a Personal Touch</p>
+        </div>
+        <div class="text-white font-[roboto] font-medium my-5">
+          <p class="text-justify text-sm/relaxed md:text-base/relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, accusamus non praesentium animi quasi corporis ea
+            officia sequi at sit, ipsa totam ullam iste mollitia amet omnis
+            earum ipsum exercitationem! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. In suscipit hic officia illo. Hic atque nobis
+            ducimus dolore facere minima. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde, blanditiis?
+          </p>
+          <br />
+          <p class="text-justify text-sm/relaxed text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            obcaecati reiciendis nostrum, amet dicta impedit aut provident sunt
+            magnam, velit ipsum aliquid alias! Aliquam placeat, itaque
+            recusandae voluptatibus aliquid quam? Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Cumque, provident.
+          </p>
+          <br />
+          <p class="text-justify text-sm/relaxed text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            obcaecati reiciendis nostrum, amet dicta impedit aut provident sunt
+            magnam, velit ipsum aliquid alias! Aliquam placeat, itaque
+            recusandae voluptatibus aliquid quam? Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Cumque, provident.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Teams Section -->
+    <section id="teams">
+      <div
+        class="border-t-2 max-w-sm mx-auto md:mx-auto border-slate-700 md:container my-5"
+      >
+        <div class="mx-auto max-w-7xl px-4 my-5 sm:px-6 lg:px-8">
+          <h1
+            class="text-white font-[poppins] font-light text-xl md:text-4xl my-7 text-center"
+          >
+            Our Teams
+          </h1>
+          <div
+            class="grid my-5 md:grid-cols-3 gap-10 justify-center text-center"
+          >
+            <div class="text-white">
               <div>
-                <div class="border-b-2 border-orange-400 p-2">
-                  <h1 class="text-white mt-2 font-[poppins] text-xl">
-                    Mr. William Smith
-                  </h1>
-                  <p class="text-slate-500 font-[roboto] text-sm">
-                    CEO Ayacasa Studio.
+                <img
+                  class="w-full h-[500px] object-top object-cover rounded-2xl"
+                  src="img/man.jpg"
+                  alt=""
+                />
+                <div>
+                  <div class="border-b-2 border-orange-400 p-2">
+                    <h1 class="text-white mt-2 font-[poppins] text-xl">
+                      Mr. William Smith
+                    </h1>
+                    <p class="text-slate-500 font-[roboto] text-sm">
+                      CEO Ayacasa Studio.
+                    </p>
+                  </div>
+                  <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Inventore corporis eius magnam eos assumenda reprehenderit
+                    asperiores, voluptatem vitae. Adipisci, architecto.
                   </p>
                 </div>
-                <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Inventore corporis eius magnam eos assumenda reprehenderit
-                  asperiores, voluptatem vitae. Adipisci, architecto.
-                </p>
               </div>
             </div>
-          </div>
-          <div class="text-white">
-            <div>
-              <img
-                class="w-full h-[500px] object-cover object-top rounded-2xl"
-                src="img/man2.jpg "
-                alt=""
-              />
+            <div class="text-white">
               <div>
-                <div class="border-b-2 border-orange-400 p-2">
-                  <h1 class="text-white mt-2 font-[poppins] text-xl">
-                    Mr. Tom Hanks
-                  </h1>
-                  <p class="text-slate-500 font-[roboto] text-sm">
-                    Interior Designer.
+                <img
+                  class="w-full h-[500px] object-cover object-top rounded-2xl"
+                  src="img/man2.jpg "
+                  alt=""
+                />
+                <div>
+                  <div class="border-b-2 border-orange-400 p-2">
+                    <h1 class="text-white mt-2 font-[poppins] text-xl">
+                      Mr. Tom Hanks
+                    </h1>
+                    <p class="text-slate-500 font-[roboto] text-sm">
+                      Interior Designer.
+                    </p>
+                  </div>
+                  <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Inventore corporis eius magnam eos assumenda reprehenderit
+                    asperiores, voluptatem vitae. Adipisci, architecto.
                   </p>
                 </div>
-                <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Inventore corporis eius magnam eos assumenda reprehenderit
-                  asperiores, voluptatem vitae. Adipisci, architecto.
-                </p>
               </div>
             </div>
-          </div>
-          <div class="text-white">
-            <div>
-              <img
-                class="w-full h-[500px] object-top object-cover rounded-2xl"
-                src="img/man3.jpg"
-                alt=""
-              />
+            <div class="text-white">
               <div>
-                <div class="border-b-2 border-orange-400 p-2">
-                  <h1 class="text-white mt-2 font-[poppins] text-xl">
-                    Mr. Brad Copper
-                  </h1>
-                  <p class="text-slate-500 font-[roboto] text-sm">
-                    Project Manager.
+                <img
+                  class="w-full h-[500px] object-top object-cover rounded-2xl"
+                  src="img/man3.jpg"
+                  alt=""
+                />
+                <div>
+                  <div class="border-b-2 border-orange-400 p-2">
+                    <h1 class="text-white mt-2 font-[poppins] text-xl">
+                      Mr. Brad Copper
+                    </h1>
+                    <p class="text-slate-500 font-[roboto] text-sm">
+                      Project Manager.
+                    </p>
+                  </div>
+                  <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Inventore corporis eius magnam eos assumenda reprehenderit
+                    asperiores, voluptatem vitae. Adipisci, architecto.
                   </p>
                 </div>
-                <p class="my-3 text-justify font-[roboto] text-sm/relaxed">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Inventore corporis eius magnam eos assumenda reprehenderit
-                  asperiores, voluptatem vitae. Adipisci, architecto.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- End Teams Section -->
     <!-- Gallery Section -->
     <section
+      id="gallery"
       class="border-t-2 max-w-sm mx-auto md:mx-auto border-slate-700 md:container my-5"
     >
       <div class="mx-auto max-w-7xl px-4 my-5 sm:px-6 lg:px-8">
@@ -283,6 +290,7 @@
       </div>
     </section>
     <section
+      id="contact"
       class="border-t-2 max-w-sm mx-auto md:mx-auto border-slate-700 md:container my-5"
     >
       <div
@@ -413,6 +421,13 @@
         </div>
       </div>
     </section>
+    <button
+      id="scrollTopBtn"
+      class="hidden md:block fixed bottom-4 right-4 px-2 py-1 bg-slate-700 border-2 border-orange-400 text-white rounded-full shadow-lg hover:bg-orange-400 opacity-0 translate-y-4 pointer-events-none transition-all duration-300 ease-in-out"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <script src="/src/main.js"></script>
   </body>
 </html>

@@ -27,3 +27,16 @@ window.addEventListener("scroll", () => {
     );
   }
 });
+const btn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    btn.classList.remove("opacity-0", "translate-y-4", "pointer-events-none");
+  } else {
+    btn.classList.add("opacity-0", "translate-y-4", "pointer-events-none");
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
