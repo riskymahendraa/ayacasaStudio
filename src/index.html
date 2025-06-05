@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Ayacasa Studio</title>
   </head>
   <body class="bg-black">
@@ -100,7 +101,13 @@
         >
           <p>Innovative Architecture <br />with a Personal Touch</p>
         </div>
-        <div class="text-white font-[roboto] font-medium my-5">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          class="text-white font-[roboto] font-medium my-5"
+        >
           <p class="text-justify text-sm/relaxed md:text-base/relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur, accusamus non praesentium animi quasi corporis ea
@@ -141,6 +148,10 @@
             Our Teams
           </h1>
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-offset="300"
+            data-aos-duration="800"
             class="grid my-5 md:grid-cols-3 gap-10 justify-center text-center"
           >
             <div class="text-white">
@@ -240,7 +251,13 @@
             odio ab non!
           </div>
         </div>
-        <div class="gallery max-w-sm mx-auto">
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="300"
+          data-aos-duration="800"
+          class="gallery max-w-sm mx-auto"
+        >
           <div class="flex flex-col mb-10">
             <div class="grid md:grid-cols-12 gap-8 lg:mb-11 mb-7">
               <div
@@ -358,6 +375,10 @@
           </div>
         </div>
         <div
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
+          data-aos-offset="300"
+          data-aos-duration="800"
           class="text-white ml-[9%] max-w-sm text-4xl mx-auto w-full md:p-5 text-center col-span-1 md:col-span-2 md:max-w-7xl md:border-l-2 border-slate-500"
         >
           <iframe
@@ -429,5 +450,12 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
     <script src="/src/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
